@@ -1,0 +1,50 @@
+.ui-kit-chip {
+  @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-sans ring-1 ring-inset;
+
+  /* size */
+
+  &:is(.size-sm) {
+    @apply text-xs;
+  }
+
+  &:is(.size-md) {
+    @apply text-sm;
+  }
+
+  &:is(.size-lg) {
+    @apply text-base;
+  }
+
+  /* variant */
+
+  &:is(.variant-navy) {
+    @apply bg-main-100 text-main-500 ring-main-50;
+    --ui-kit-hover-bg: theme(colors.accent.100);
+  }
+
+  &:is(.variant-green) {
+    @apply bg-green-200 text-green-700 ring-green-100;
+    --ui-kit-hover-bg: theme(colors.green.300);
+  }
+
+  &:is(.variant-red) {
+    @apply bg-red-200 text-red-600 ring-red-50;
+    --ui-kit-hover-bg: theme(colors.red.300);
+  }
+
+  &:is(.variant-amber) {
+    @apply bg-amber-200 text-amber-700 ring-amber-100;
+    --ui-kit-hover-bg: theme(colors.amber.300);
+  }
+
+  &:is(.variant-gray) {
+    @apply bg-mono-50 text-mono-600 ring-mono-200;
+    --ui-kit-hover-bg: theme(colors.mono.100);
+  }
+
+  /* state */
+
+  &:is(.hoverable):hover {
+    background-color: var(--ui-kit-hover-bg);
+  }
+}

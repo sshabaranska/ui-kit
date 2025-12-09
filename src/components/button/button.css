@@ -1,0 +1,4 @@
+.ui-kit-button {
+  @apply bg-blue-500 text-white p-2 rounded-md;
+  font-size: theme('fontSize.xl');
+}
