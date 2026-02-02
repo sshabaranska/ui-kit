@@ -28,5 +28,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pretty print issue
-        run: |
-          echo '${{ toJson(github) }}' | jq
+        run: echo '${{ toJson(github) }}'
